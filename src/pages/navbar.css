@@ -48,12 +48,20 @@ body {
   font-size: 16px;
   font-weight: 400;
   text-decoration: none;
+  float: left;
+  display: block;
+  text-align: center;
+  padding-top: 4px;
 }
 
 .nav-elements ul a.active {
   color: #574c4c;
   font-weight: 500;
   position: relative;
+}
+
+.navbar a:hover {
+  color: #8f8f90;
 }
 
 .nav-elements ul a.active::after {
