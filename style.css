@@ -70,6 +70,7 @@ button:focus-visible {
   width: 450px;
   height: 350px;
   margin-left: 80px;
+  border-radius: 20px;
 }
 
 /* .main-page-head-img {
