@@ -28,9 +28,10 @@ body {
   padding-top: 80px;
   color: #20201f;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
   max-width: 1100px;
+  margin: 0 auto; /* Center horizontally within the parent container */
 }
 
 h1 {
@@ -77,8 +78,15 @@ button:focus-visible {
   margin-bottom: 60px;
 } */
 
-.intro-paragraph {
+.intro-paragraphs {
   margin-left: 50px;
+  padding-right: 15px;
+  overflow: hidden;
+  height: 560px;
+}
+
+.intro-paragraphs:hover {
+  overflow-y: auto;
 }
 
 .intro-paragraph p {
