@@ -10,8 +10,10 @@ function Navbar() {
       <div className="container">
         <div className="nav-elements">
           <ul>
-            <img src={logo} alt="Logo" className="navbar-logo" />{" "}
-            {/* Logo image */}
+            <Link to="/">
+              <img src={logo} alt="Logo" className="navbar-logo" />{" "}
+              {/* Logo image */}
+            </Link>
             <li className="home-link">
               <Link to="/">Home</Link>
             </li>
