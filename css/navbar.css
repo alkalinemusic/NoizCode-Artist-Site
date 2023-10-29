@@ -1,5 +1,14 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"); */
 
+/* COLOR PALETTE TO EXPLORE   https://mycolor.space/?hex=%2320201F&sub=1 */
+
+:root {
+  --dark-black: #20201f;
+  --white1: #eee;
+  --white2: #ddd;
+  --light-yellow: #f2f3cc;
+}
+
 body {
   /* margin: 0;
   padding: 0;
