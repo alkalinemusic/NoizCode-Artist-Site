@@ -11,6 +11,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  --dark-black: #20201f;
+  --white1: #eee;
+  --white2: #ddd;
+  --white3: rgb(214, 214, 214);
+  --light-yellow: #f2f3cc;
 }
 
 body {
@@ -21,12 +26,12 @@ body {
   min-height: 100vh;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  background-color: #eee;
+  background-color: var(--dark-black);
 }
 
 .main-body {
   padding-top: 80px;
-  color: #20201f;
+  color: var(--white3);
   display: flex;
   justify-content: center; /* Center vertically */
   align-items: center; /* Center horizontally */
@@ -68,8 +73,8 @@ button:focus-visible {
 
 .main-page-head-img,
 .main-page-live-img {
-  width: 450px;
-  height: 350px;
+  width: 350px;
+  height: 250px;
   margin-left: 80px;
   border-radius: 20px;
 }
@@ -82,7 +87,8 @@ button:focus-visible {
   margin-left: 50px;
   padding-right: 15px;
   overflow: hidden;
-  height: 560px;
+  height: 460px;
+  letter-spacing: 1px;
 }
 
 .intro-paragraphs:hover {
@@ -91,7 +97,6 @@ button:focus-visible {
 
 .intro-paragraph p {
   margin-bottom: 30px;
-  letter-spacing: 0.5px;
 }
 
 /* MEDIA QUERIES */
