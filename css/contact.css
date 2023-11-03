@@ -1,0 +1,44 @@
+:root {
+  --dark-black: #20201f;
+  --white1: #eee;
+  --white2: #ddd;
+  --white3: rgb(214, 214, 214);
+  --light-yellow: #f2f3cc;
+  --link-color1: #4287f5; /* Light blue color for links */
+  --link-color2: #b85f1b; /* Light orange color for links */
+  --link-color3: #68b948; /* Light green color for links */
+  --link-color4: #9d6db9; /* Light purple color for links */
+}
+
+.contact-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.social-media {
+  text-align: center;
+  font-size: 26px;
+}
+
+.contact-links li {
+  list-style-type: none;
+}
+
+.contact-links a {
+  text-decoration: none;
+}
+
+.contact-links a:link {
+  color: var(--link-color1);
+}
+.contact-links a:visited {
+  color: var(--link-color2);
+}
+.contact-links a:hover {
+  color: var(--link-color3);
+}
+.contact-links a:active {
+  color: var(--link-color4);
+}
