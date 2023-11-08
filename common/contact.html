@@ -20,6 +20,7 @@
       integrity="sha384-CQ1K6Nw6kuF5nRVqKgI8pDmfF90DkFD1+76E/R5B5tk5Xh5ZI8PnPx2w5kq5cvM+2o"
       crossorigin="anonymous"
     />
+    <script src="../js/copy-email-text-popup.js"></script>
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -62,7 +63,16 @@
         <!-- Contact Section -->
         <li>
           <section class="social-media">
-            <h2><a href="/contact">Contact</a></h2>
+            <!-- <button onclick="copyText()">Copy</button> -->
+            <h2>
+              <!-- <a onclick="copyText()">Booking</a> -->
+              <div class="popup" onclick="myFunction()">
+                Booking
+                <span class="popuptext" id="myPopup"
+                  >noizcode@gmail.com<br />copied!</span
+                >
+              </div>
+            </h2>
             <!-- Add the Font Awesome envelope icon here -->
             <i class="fa-regular fa-envelope" style="color: #1e3050"></i>
           </section>
