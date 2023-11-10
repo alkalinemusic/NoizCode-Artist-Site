@@ -1,0 +1,14 @@
+.music-player {
+  display: block;
+  padding-top: 80px;
+  color: var(--white3);
+  display: flex;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  max-width: 1100px;
+  margin: 0 auto; /* Center horizontally within the parent container */
+}
+
+audio {
+  width: 550px;
+}
