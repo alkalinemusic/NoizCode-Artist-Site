@@ -50,21 +50,35 @@
       </div>
     </div>
     <!-- END OF NAV BAR CONTAINER -->
-    <!-- MUSIC PLAYER SECTION -->
-    <section class="music-player">
-      <audio
-        controls
-        controllsList="nodownload nofullscreen"
-        muted="true"
-        preload="metadata"
-      >
-        <source
-          src="../music/NoizCode_Distraction (Mastrng 1).mp3"
-          type="audio/mpeg"
-          class="song-source"
-        />
-      </audio>
-    </section>
+
+    <!-- MUSIC PLAYER AND PLAYLIST SECTION -->
+    <div class="music-container">
+      <section class="music-player">
+        <audio
+          controls
+          controllsList="nodownload nofullscreen"
+          muted="true"
+          preload="metadata"
+        >
+          <source
+            src="../music/NoizCode_Distraction (Mastrng 1).mp3"
+            type="audio/mpeg"
+            class="song-source"
+          />
+        </audio>
+      </section>
+
+      <!-- PLAYLIST SECTION -->
+      <section class="playlist">
+        <!-- Add your playlist content here -->
+        <ul>
+          <li>Distraction</li>
+          <li>Gruff</li>
+          <li>Deep Swell</li>
+          <!-- Add more songs as needed -->
+        </ul>
+      </section>
+    </div>
 
     <!-- END OF MUSIC PLAYER SECTION -->
 

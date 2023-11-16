@@ -1,14 +1,43 @@
-.music-player {
-  display: block;
-  padding-top: 80px;
-  color: var(--white3);
+/* ... (your previous CSS code) ... */
+:root {
+  --dark-black: #20201f;
+}
+/* MUSIC CONTAINER */
+.music-container {
   display: flex;
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
+  flex-direction: column; /* Stack the music player and playlist vertically */
+  align-items: center; /* Center horizontally within the parent container */
   max-width: 1100px;
   margin: 0 auto; /* Center horizontally within the parent container */
+}
+
+/* MUSIC PLAYER SECTION */
+.music-player {
+  display: block;
+  padding-top: 20px; /* Adjust the spacing between music player and playlist */
+  color: var(--white3);
 }
 
 audio {
   width: 550px;
 }
+
+/* PLAYLIST SECTION */
+.playlist {
+  background-color: var(--dark-black);
+  width: 550px; /* Same width as the audio player */
+  padding: 20px 0;
+  text-align: center; /* Center the playlist content horizontally */
+}
+
+.playlist ul {
+  list-style: none;
+  padding: 0;
+}
+
+.playlist li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* ... (the rest of your CSS code) ... */
