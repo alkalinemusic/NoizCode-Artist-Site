@@ -12,3 +12,43 @@
 audio {
   width: 550px;
 }
+
+/* .soundcloud-player {
+  width: 450px;
+  height: 550px;
+} */
+
+/* ... (your previous CSS code) ... */
+
+/* MUSIC PLAYER SECTION */
+.music-player {
+  display: block;
+  padding-top: 20px; /* Adjust the spacing between music player and playlist */
+  color: var(--white3);
+  display: flex;
+  flex-direction: column; /* Stack the media players vertically */
+  align-items: center; /* Center horizontally */
+}
+
+/* MEDIA PLAYERS CONTAINER */
+.media-players-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+}
+
+.soundcloud-player,
+iframe[src*="spotify.com"] {
+  width: 450px; /* Set the width for each media player */
+  height: 450px; /* Automatically adjust the height based on content */
+}
+
+.spotify-player,
+iframe[src*="spotify.com"] {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* ... (the rest of your CSS code) ... */
