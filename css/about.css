@@ -4,3 +4,18 @@
   margin-left: 80px;
   border-radius: 20px;
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 640px) {
+}
+
+@media (max-width: 480px) {
+}
+
+/* END OF MEDIA QUERIES */
