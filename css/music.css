@@ -52,3 +52,57 @@ iframe[src*="spotify.com"] {
 }
 
 /* ... (the rest of your CSS code) ... */
+
+/* MEDIA QUERIES */
+@media (max-width: 1024px) {
+  .main-body {
+    max-width: 768px;
+  }
+  .media-players-container {
+    display: block;
+  }
+  .soundcloud-player {
+    margin-left: 50px;
+    margin-top: 30%;
+  }
+  .spotify-player {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 640px) {
+  .main-body {
+  }
+  .media-players-container {
+    max-width: 420px;
+  }
+  .soundcloud-player,
+  .spotify-player {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  .soundcloud-player {
+    margin-top: 30%;
+    margin-left: 50px;
+  }
+  .spotify-player {
+    margin-top: 20px;
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .media-players-container {
+    max-width: 400px;
+  }
+  .soundcloud-player,
+  .spotify-player {
+    margin-top: 100px;
+  }
+  .spotify-player {
+    margin-bottom: 100px;
+  }
+}
+
+/* END OF MEDIA QUERIES */
