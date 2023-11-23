@@ -7,15 +7,50 @@
 
 /* MEDIA QUERIES */
 @media (max-width: 1280px) {
+  .about-page-gear-img {
+    margin-top: 50px;
+    width: 302px;
+    height: 403px;
+    margin-left: 40px;
+  }
+  .intro-paragraphs {
+    max-width: 300px;
+    height: 352px;
+  }
 }
 
 @media (max-width: 768px) {
+  .about-page-gear-img {
+    overflow: visible;
+    width: 283px;
+    height: 378px;
+    margin-left: 30px;
+  }
+  .intro-paragraphs {
+    max-width: 300px;
+  }
 }
 
 @media (max-width: 640px) {
+  .about-page-gear-img {
+    width: 302px;
+    height: 403px;
+    margin-left: 40px;
+  }
+  .intro-paragraphs {
+    max-width: 300px;
+  }
 }
 
 @media (max-width: 480px) {
+  .about-page-gear-img {
+    width: 226px;
+    height: 302px;
+    margin-left: 40px;
+  }
+  .intro-paragraphs {
+    max-width: 240px;
+  }
 }
 
 /* END OF MEDIA QUERIES */
