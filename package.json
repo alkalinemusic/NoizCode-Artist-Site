@@ -1,0 +1,23 @@
+{
+  "name": "noizcode-site",
+  "version": "1.0.0",
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alkalinemusic/NoizCode-Artist-Site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alkalinemusic/NoizCode-Artist-Site/issues"
+  },
+  "homepage": "https://github.com/alkalinemusic/NoizCode-Artist-Site#readme",
+  "devDependencies": {
+    "vite": "^5.1.4"
+  }
+}
