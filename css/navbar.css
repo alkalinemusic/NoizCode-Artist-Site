@@ -1,178 +1,85 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"); */
-
-/* COLOR PALETTE TO EXPLORE   https://mycolor.space/?hex=%2320201F&sub=1 */
-
-:root {
-  --dark-black: #20201f;
-  --white1: #eee;
-  --white2: #ddd;
-  --light-yellow: #f2f3cc;
-}
-
-body {
-  /* margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-  background-color: #eee; */
-}
-
-.nav-container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-}
-
-.navbar {
-  overflow: hidden;
+/* Drawer style for navbar */
+.navbar-drawer {
   position: fixed;
   top: 0;
-  width: 100%;
-  height: 60px;
-  background-color: #20201f;
+  left: 0;
+  height: 100%;
+  width: 50px; /* Initial width of the drawer */
+  transition: width 0.3s ease;
+  background-color: var(--dark-black);
+  z-index: 1000;
 }
 
+/* Menu Tab Styles (visible even when drawer is collapsed) */
+.menu-tab {
+  position: absolute;
+  top: 10%;
+  right: -30px; /* Sticks out from the left side */
+  width: 60px;
+  padding: 5px;
+  background-color: var(--dark-black);
+  color: var(--white3);
+  font-size: 14px;
+  text-align: center;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.menu-tab:hover {
+  background-color: #333; /* Slight color change on hover */
+}
+
+/* Show the drawer on hover */
+.navbar-drawer:hover {
+  width: 250px;
+}
+
+.navbar-drawer:hover .menu-tab {
+  display: none; /* Hide the tab when drawer is open */
+}
+
+/* Rest of your navbar styles */
 .nav-elements {
-  transition: transform 0.3s ease-in-out;
-}
-
-.home-link {
-  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
 }
 
 .nav-elements ul {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  color: #ddd;
-  letter-spacing: 1px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.nav-elements ul li:not(:last-child) {
-  margin-right: 50px;
+.nav-elements ul li {
+  margin: 15px 0;
 }
 
 .nav-elements ul a {
-  color: rgb(214, 214, 214);
-  font-size: 16px;
-  font-weight: 00;
   text-decoration: none;
-  float: left;
-  display: block;
-  text-align: center;
-  padding-top: 4px;
+  color: var(--white3);
+  font-size: 18px;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateX(-50px);
 }
 
-.nav-elements ul a.active {
-  color: #574c4c;
-  font-weight: 500;
-  position: relative;
-}
-
-.navbar a:hover {
-  color: #8f8f90;
-}
-
-.nav-elements ul a.active::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #574c4c;
-}
-
-.nav-elements.active {
+.navbar-drawer:hover .nav-elements ul a {
+  opacity: 1;
   transform: translateX(0);
 }
 
-.menu-icon {
-  display: none;
-  cursor: pointer;
-  font-size: 24px;
-  position: absolute;
-  right: 20px;
-  top: 15px;
-  z-index: 2;
+.navbar-logo {
+  width: 40px;
+  margin-bottom: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateX(-50px);
 }
 
-.nav-elements {
-  transition: transform 0.3s ease-in-out;
-  transform: translateX(-100%);
-  position: fixed;
-  top: 60px; /* Adjust based on your navbar's height */
-  left: 0;
-  width: 100%;
-  background-color: #20201f;
-  display: none; /* Initially hide nav-elements */
-}
-
-.nav-elements.active {
-  display: block; /* Show when active */
+.navbar-drawer:hover .navbar-logo {
+  width: 150px;
+  opacity: 1;
   transform: translateX(0);
-}
-
-/* MEDIA QUERIES */
-@media screen and (max-width: 840px) {
-  .nav-elements ul li:not(:last-child) {
-    margin-right: 20px; /* Decrease the margin for smaller screens */
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .menu-icon {
-    display: block;
-  }
-
-  .nav-elements ul {
-    flex-direction: column;
-    padding: 0;
-  }
-
-  .nav-elements ul li {
-    text-align: center;
-    margin: 20px 0;
-  }
-
-  .nav-elements ul a {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 680px) {
-  .nav-elements ul a {
-    font-size: 14px;
-  }
-  .nav-elements ul {
-    letter-spacing: 0.5px;
-  }
-  .navbar-logo {
-    width: 135px;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .nav-elements ul a {
-    font-size: 11px;
-  }
-  .nav-elements ul {
-    letter-spacing: 0.2px;
-  }
-  .navbar-logo {
-    width: 100px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .nav-elements ul li:not(:last-child) {
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .nav-elements ul li:not(:last-child) {
-  }
 }
